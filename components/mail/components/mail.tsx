@@ -26,7 +26,6 @@ import { MailList } from "@/components/mail/components/mail-list";
 import { Nav } from "@/components/mail/components/nav";
 import { type Mail } from "@/components/mail/data";
 import { useMail } from "@/components/mail/use-mail";
-import { ModeToggle } from "@/components/mode-toggle";
 
 interface MailProps {
   accounts: {
@@ -171,7 +170,6 @@ export function Mail({
                 <TabsTrigger value="all">All mail</TabsTrigger>
                 <TabsTrigger value="unread">Unread</TabsTrigger>
               </TabsList>
-              <ModeToggle />
             </div>
             <Separator />
             <div className="bg-background/95 supports-[backdrop-filter]:bg-background/60 p-4 backdrop-blur">
